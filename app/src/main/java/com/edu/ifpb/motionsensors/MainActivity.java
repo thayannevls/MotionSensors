@@ -65,7 +65,7 @@ public class MainActivity extends Activity implements SensorEventListener {
                 float speed = Math.abs(x + y + z - last_x - last_y - last_z) / diffTime * 10000;
 
                 if (speed > SHAKE_THRESHOLD) {
-                    textbox.setText((String.valueOf(speed))) ;
+                    textbox.setText("Speed: " + (String.valueOf(speed))) ;
                 }
 
                 last_x = x;
